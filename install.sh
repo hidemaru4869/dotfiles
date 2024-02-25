@@ -13,4 +13,4 @@ if [ -f "$HOME/.bashrc" ]; then
 else
     echo "bashrc not found"
 fi
-ln ln -snf $HOME/dotfiles/.bashrc $HOME/.bashrc
+ln -snf $HOME/dotfiles/.bashrc $HOME/.bashrc
