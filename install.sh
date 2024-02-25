@@ -14,3 +14,6 @@ else
     echo "bashrc not found"
 fi
 ln -snf $HOME/dotfiles/.bashrc $HOME/.bashrc
+
+# devcontiner 経由の場合に読み込まれないため、ここで読み込む
+source $HOME/.bashrc
