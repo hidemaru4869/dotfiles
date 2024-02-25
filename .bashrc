@@ -16,14 +16,14 @@ source $bashcomp
 
 if [ -f ~/.git-completion.sh ]; then
     source ~/.git-completion.sh
-elif [ whitch curl];    then
+elif [ -x "$(which curl)" ];    then
     curl -o ~/.git-completion.sh \
         https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
     source ~/.git-completion.sh
 fi
 if [ -f ./.git-prompt.sh ]; then
     source ~/.git-prompt.sh
-elif [ whitch curl];    then
+elif [ -x "$(which curl)" ];    then
     curl -o ~/.git-prompt.sh \
         https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
     source ~/.git-prompt.sh
