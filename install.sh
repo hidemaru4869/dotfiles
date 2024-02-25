@@ -7,7 +7,7 @@ mkdir "$HOME/.dotbackup"
 fi
 
 # Check if the .bashrc exists
-IF [ -f "$HOME/.bashrc" ]; then
+if [ -f "$HOME/.bashrc" ]; then
     echo "bashrc already exists"
     mv $HOME/.bashrc $HOME/.dotbackup/.bashrc
 else
